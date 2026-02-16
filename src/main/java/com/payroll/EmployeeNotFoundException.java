@@ -8,7 +8,7 @@ public class EmployeeNotFoundException extends RuntimeException{
     // The constructor of the 
     // EmployeeNotFoundException class 
     // takes a long id as a parameter and
-    EmployeeNotFoundException(long id){
+   public EmployeeNotFoundException(long id){
 
         // It calls the constructor of 
         // the superclass (RuntimeException)
@@ -20,7 +20,7 @@ public class EmployeeNotFoundException extends RuntimeException{
         //  allows us to provide a 
         // custom error message when 
         // this exception is thrown.
-        super("Coould not find employee" + id);
+        super("Could not find employee " + id);
 
 
         // HTTP status code 404 is 
@@ -28,5 +28,6 @@ public class EmployeeNotFoundException extends RuntimeException{
         //  requested resource could
         //  not be found on the server.
     }
+
 
 }
