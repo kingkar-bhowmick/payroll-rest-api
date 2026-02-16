@@ -5,6 +5,7 @@ import java.util.Objects;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 //Entity means that this class is a JPA entity.
@@ -32,15 +33,15 @@ private String name;
 private String role;
 
 //paramenterless constructor
- Employee () {}
+ public Employee () {}
 
- Employee (String name, String role){
+ public Employee (String name, String role){
     this.name = name;
     this.role = role;
  }
 
  //Getters and setters for the fields
- public long getId(){
+ public Long getId(){
     return id;
  }
 
